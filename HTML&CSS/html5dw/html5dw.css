@@ -1,0 +1,237 @@
+body{
+	font-size: 12px;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+html, body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+	background-color: #fff;
+}
+body .wrapper{
+	height: auto; 
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin:0;
+	padding: 0;
+}
+ul li,ol li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+.header{
+	width: 100%;
+	height: 70px;
+	background: #e1652f;
+}
+.header .logo{
+	padding: 10px 0 0 47px;
+	float: left;
+}
+.header .nav a{
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 10px;
+	margin-left: 5px;
+	font-size: 19.2px;
+	color: #fff;
+}
+.header .nav a:first-child{
+	margin-left: 0px;
+}
+.header .nav a:hover{
+	background: #e44d26;
+}
+.header .nav .match{
+	position: relative;
+}
+.header .nav span{
+	position: absolute;
+	top: 5px;
+	left: 35px;
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	border-radius: 10px;
+	background: rgba(255,65,29,.8);
+	box-shadow: 1px 1px 10px rgba(0,0,0,.26);
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+.main .hotnews{
+	width: 918px;
+}
+.main .hotnews .hotnews-item{
+	position: relative;
+    height: 216px;
+    margin: 20px 50px 22px 50px;
+}
+.main .hotnews .hotnews-item img{
+	float: left;
+	width: 322px;
+	padding-right: 20px;
+	overflow: hidden;
+}
+.main .hotnews .hotnews-item .hotnews-title{
+	display: block;
+	height:25.6px;
+	line-height: 25.6px;
+}
+.main .hotnews .hotnews-item .hotnews-title a{
+	font-size: 16px;
+	color: #e1652f;
+	font-weight: normal;
+}
+.main .hotnews .hotnews-item .hotnews-title a:hover{
+	color: #095f8a;
+}
+.main .hotnews .hotnews-item .hotnews-text{
+	white-space: nowrap;
+	width: 390px;
+	padding-top: 3px;
+	font-size: 13px;
+	color: #757575;
+	overflow : hidden;
+    text-overflow:ellipsis;
+}
+.hotnews-item .hotnews-footer{
+	position: absolute;
+	right: 5px;
+	bottom: 0px;
+	display: inline-block;
+    font-style: normal;
+    font-size: 16px;
+	color: #ddd;
+}
+.hotnews-item .hotnews-footer .date:before{
+	content: "\f017";
+}
+.hotnews-item .hotnews-footer .likes:before{
+	content: "\f25a";
+}
+.main .choicemore{
+	width: 760px;
+	height: 110px;
+	margin-left: 45px;
+	border-top: 1px solid #ddd;
+	padding-left: 115px;
+	padding-top: 20px;
+	clear: both;
+}
+.main .choicemore a{
+	display: inline-block;
+	border: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	color: #e1652f;
+	font-size: 16px;
+	margin-right: 5px;
+}
+.main .choicemore a:hover{
+	color: #095f8a;
+}
+.side{
+	position: absolute;
+    top: 70px;
+    right: 40px;
+	display: inline-block;
+	width: 350px;
+	height: 640px;
+	background-color: #f5f5f5;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.hotlabels .hd{
+	display: inline-block;
+	margin-top: 22px;
+	margin-left: 31px;
+	width: 330px;
+	height: 44px;
+	line-height: 44px;
+	position: relative;
+   	border-bottom: 1px solid #dedede;
+} 
+.hotlabels .hd h2::before{
+	content: "";
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    bottom: 8px;
+    border-left: 3px solid #e1652f;
+}
+.hotlabels .hd h2{
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.hotlabels .bd{
+	margin-left: 50px;
+	margin-top: 25px;
+}
+.hotlabels .bd a{
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 10px;
+	text-align: center;
+	background-color: #fff;
+	color: #e1652f;
+	font-size: 16px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+}
+.hotlabels .bd a:hover{
+	color: #095f8a;
+}
+.footer{
+	width: 100%;
+	height: 224px;
+	background: #333;
+}
+.footer .footer-info {
+	padding:50px 0 0 400px; 
+}
+.footer .footer-info a{
+	color: #ddd;
+	font-size: 16px;
+	padding:0 25px 0 15px;
+}
+.footer p{
+	font-size: 12px;
+	margin-top: 35px;
+	text-align: center;
+	color: #ddd;
+}
+.footer .rec{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	margin: 24px auto 48px;
+	text-align: center;
+}
+.footer .rec span{
+	display: inline-block;
+	color: #ddd;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: bottom;
+    text-decoration: underline;
+}
+.footer .rec img{
+	height: 30px;
+	margin-left: 14px;
+}

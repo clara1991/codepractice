@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+body{
+	width: 100%;
+	height: 1000px;
+}
+.poetry{
+	width: 200px;
+	margin:100px auto;
+}
+.author{
+	text-align: right;
+}
+.toolbar{
+	position: fixed;
+	bottom: 100px;
+	right: 10px;
+	width: 52px;
+}
+.item{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	position: relative;
+}
+.toolbar-layer{
+	position: absolute;
+	right: 52px;
+	bottom: 0;
+	display: none;
+}
+.item,.toolbar-layer{
+	background: url(toolbar.png) no-repeat;
+}
+.item-weixin{
+	background-position: 0 -798px;
+}
+.item-weixin .toolbar-layer{
+	width: 160px;
+	height: 180px;
+	background-position: -6px -226px;
+}
+.item-feedback{
+	background-position: 0 -426px;
+}
+.item-app{
+	background-position: 0 -550px;
+}
+.item-app .toolbar-layer{
+	width: 160px;
+	height: 200px;
+	background-position: -6px -2px;
+}
+.item-top{
+	background-position: 0 -674px;
+}

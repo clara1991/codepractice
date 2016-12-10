@@ -1,0 +1,98 @@
+ a{
+	text-decoration: none;
+	color: #333;
+}
+.top{
+	width: 1170px;
+	height:40px;
+	margin:0 auto;
+}
+.top .logo{
+	width: 100px;
+	height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.top .menu{
+	position: relative;
+	width: 230px;
+	height: 30px;
+    line-height: 30px;
+    float: right;
+}
+
+.top .menu a{
+	font-size: 14px;
+	color: #333;
+	padding-right: 10px;
+
+}
+.top .menu a:first-child{
+	font-weight: bold;
+}
+
+.heading{
+	width: 1170px;
+	height:120px;
+	margin: 0 auto;
+}
+.heading p{
+	text-align: center;
+    font-size:  1.75rem;
+	color:#00f;
+	font-weight: 400;
+	margin: 0;
+}
+
+.heading a{
+    display:line-block;
+	margin-left:500px;
+}
+.middle{
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.middle .middle-left{
+	width:100%;
+	height: 100%;
+    -webkit-column-count: 2;
+}
+.middle .middle-left div a{
+	display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 3px;
+    color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	
+}
+
+.middle .middle-left div{
+	width: 100%;
+	height: 140px;
+	background: #b7c1ce; 	
+    margin-bottom: 30px;
+}
+
+.middle .middle-left a{
+	display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.middle .middle-left .ml6{
+	height: 460px;
+	background: #3cd6ee; 	
+}
+.bottom{
+	width: 1170px;
+	height: 60px;
+	margin: 0 auto;
+	border: 1px solid red;
+}

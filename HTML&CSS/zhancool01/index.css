@@ -1,0 +1,294 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #ccc;
+}
+.bg_header{
+	width: 100%;
+	height: 150px;
+	background: #1e0f38;
+}
+.header{
+	width: 1200px;
+	height:150px;
+	margin: 0 auto;
+}
+.header .logo{
+	width: 176px;
+	height: 127px;
+	float: left;
+}
+.header .item1{
+	width: 176px;
+	height: 88px;
+	display: block;
+	margin-top: 6px;
+}
+.logo .item2,.logo .item3{
+	float: left;
+	width: 78px;
+	height: 24px;
+	margin-top: 17px;
+}
+.logo .item3{
+	margin-left: 17px;
+}
+.header .h_right{
+	width: 960px;
+	height:150px;
+	float: right;
+}
+.header .h_right .ad_search{
+	margin-top: 32px;
+	margin-left: 52px;
+	width: 908px;
+	height: 70px;
+	position: relative;
+}
+.header .h_right .ad_search a{
+	display: block;
+	float: left;
+	margin-top: 11px;
+}
+.header .h_right .ad2{
+	margin-left: 12px;
+}
+.header .h_right .ad_search .ad3{
+	margin-left: 17px;
+	margin-top: 0px;
+}
+.header .h_right .search{
+	width: 122px;
+	height: 24px;
+	float: right;
+	margin-top: 20px;
+}
+.header .h_right .search input[type="text"]{
+	width: 95px;
+	height: 18px;
+	float: left;
+}
+.header .h_right .search input[type="submit"]{
+	width: 22px;
+	height: 22px;
+	float: left;
+	border: 0;
+	background:url('images/search.jpg') no-repeat 50% 50%;
+	cursor: pointer;
+	background-color: #e5007f;
+}
+.header .h_right .ad_search .brand{ 
+	position: absolute;
+	bottom: 3px;
+	right: 0px;
+	color: #fff;
+	height: 22px;
+}
+.header .h_right .ad_search .brand span{
+	position: absolute;
+	height: 22px;
+	font-size: 13px;
+	left: -57px;
+	top:6px;
+	color: #5b506e;
+}
+
+.header .h_right .menu{
+    width: 1275px;
+    height: 37px;
+    float: left;
+    background: white;
+}
+
+.header .h_right .menu a{
+	display: inline-block;
+	line-height: 37px;
+	padding-left: 30px;
+	color: #000;
+	font-size: 12px;
+}
+.floor1{
+    width: 1200px;
+    height: 705px;
+    margin: 0 auto;
+}
+.floor1 .big-pic{
+	width: 870px;
+    height: 705px;
+	float: left;
+}
+.floor1 .big-ad{
+	width: 330px;
+    height: 705px;
+    float: left;
+}
+
+.floor2{
+	position: relative;
+	width: 1200px;
+	height: 750px;
+	margin: 0 auto;
+	margin-top: 15px;
+	border: 1px solid red;
+}
+.floor2 .diebao{
+	width: 1200px;
+	height: 60px;
+    margin: 0 auto;
+	border: 1px solid black;
+	background-color: #201037;
+}
+.floor2 .diebao .dbtext{
+	position: absolute;
+	left: 520px;
+    width: 80px;
+    height:60px;
+	line-height: 60px;
+	font-size: 30px;
+	color: #c5c0c4;
+	text-align: center;
+
+}
+.floor2 .diebao .button1{
+	position: absolute;
+	right: 500px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+}
+.floor2 .diebao .button1 input{
+    width:100px;
+    height: 30px;
+    border-radius:5px;
+    background-color: #e6a702;
+    border:1px solid #e6a702;
+    color: #610000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.floor2 .code{
+	position: absolute;
+	top: 60px;
+	width:1200px;
+    height: 690px;
+    background-color: #453a74;
+}
+
+.floor2 .code .code1{
+	float: left;
+	width: 740px;
+	height: 360px;
+\
+}
+.floor2 .code .code2{
+	float: left;
+	width: 340px;
+	height: 360px;
+\
+}
+.floor2 .code .code3{
+	float: left;
+	width: 1080px;
+	height: 260px;
+}
+.floor2 .code i{
+	width: 100px;
+	height:36px;
+	line-height: 36px;
+	float: left;
+	color: #610000;
+	text-align: center;
+	font-style:normal;
+	font-weight: bold;
+	border-radius: 10px;
+	background-color: #e6a702;
+
+}
+.floor2 .code span{
+    color: #fff;
+    font-weight: bold;
+    line-height: 36px;
+    margin-left: 10px;
+}
+
+.floor2 .code .code1 i{
+	margin-left: 40px;
+    margin-top: 20px;
+}
+.floor2 .code .code1 span{
+	position: absolute;
+    left: 150px;
+    top: 22px;
+}
+.floor2 .code .code1 img{
+	position: absolute;
+    top: 86px;
+    left: 50px;
+}
+
+.floor2 .code .code2 i{
+	position: absolute;
+    right: 350px;
+    top: 22px;
+}
+.floor2 .code .code2 span{
+	position: absolute;
+    right: 280px;
+    top: 22px;
+}
+
+.floor2 .code .code2 img{
+	position: absolute;
+    top: 110px;
+    left: 750px;
+}
+.floor2 .code .code2 p{
+    display: inline-block;
+    position: absolute;
+    right: 120px;
+    top: 84px;
+    color: #fff;
+    width: 330px;
+    height: 30px;
+    background-color: #6d61a1;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+.floor2 .code .code2 table {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 270px;
+    right: 130px;
+    border-color: #fff;
+   
+}
+.floor2 .code .code2 td{
+	padding-left: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.floor2 .code .code3 i{
+    position: absolute;
+    top: 380px;
+    left: 470px;
+}
+.floor2 .code .code3 span{
+	position: absolute;
+    top: 380px;
+    left: 570px;
+}
+
+.floor2 .code .code3 img{
+	position: absolute;
+    top: 430px;
+    left: 40px;
+}
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手风琴菜单</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul,li{
+		list-style: none;
+	}
+	div{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.hide{
+		display: none;
+	}
+	.current ul{
+		display: block;
+		background: #9cc;
+		color: #333;
+	}
+	li.nav{
+		position: relative;
+		width: 200px;
+		height: auto;
+		background: #fbede0;;
+		border: 1px solid #ccb6a9;
+		border-bottom: 0;
+		text-align: center;
+		line-height: 30px;
+		min-height: 30px;
+	}
+	li.nav:last-child{
+		border-bottom:1px solid #ccb6a9;
+	}
+	.arrow_right{
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		display: block;
+		width: 15px;
+		height: 15px;
+		background: url(vicon.png) no-repeat 0 0;
+	}
+	.arrow_down{
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		display: block;
+		width: 15px;
+		height: 15px;
+		background: url(vicon.png) no-repeat 0 -15px;
+	}
+	.content:hover{
+		color: red;
+		background:#fff;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li class="nav current">
+				nav1<span class="arrow_down"></span>
+				<ul class="hide">
+					<li class="content">content</li>
+					<li class="content">content</li>
+					<li class="content">content</li>
+				</ul>
+			</li>
+			<li class="nav">
+				nav2<span class="arrow_right"></span>
+				<ul class="hide">
+					<li class="content">content</li>
+					<li class="content">content</li>
+					<li class="content">content</li>
+				</ul>
+			</li>
+			<li class="nav">
+				nav3<span class="arrow_right"></span>
+				<ul class="hide">
+					<li class="content">content</li>
+					<li class="content">content</li>
+					<li class="content">content</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(".nav").click(function(){
+			$("li.current span").removeClass("arrow_down").addClass("arrow_right");
+			$("li.current").removeClass("current");
+			$(this).addClass("current")
+			$(this).find("span").removeClass("arrow_right").addClass("arrow_down");
+		})
+	})
+	</script>
+</html>

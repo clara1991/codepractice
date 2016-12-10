@@ -1,0 +1,470 @@
+body{
+	color: #999;
+	font-family: Arial;
+}
+*{
+	margin:0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #333;
+}
+a:hover{
+	color: #f50;
+	text-decoration:underline;
+}
+.header{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #999;
+}
+.header .logo{
+	width: 168px;
+	height: 60px;
+	float: left;
+	margin-left: 30px;
+	overflow: hidden;
+
+}
+.header .hao123-day{
+	width: 450px;
+	height: 60px;
+	float: left;
+	font-size: 12px;
+	overflow: hidden;
+}
+.header .hao123-day .set-homepage{
+    display: block;
+    width: 25px;
+    float: left;
+    background: #07ac72;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 13px;
+    text-align: center;
+    padding: 2px 5px;
+    overflow: hidden;
+}
+.header .hao123-day .city{
+	width: 150px;
+    height: 60px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+.header .hao123-day .city .city-name{
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.header .hao123-day .city .weather{
+	width: 100px;
+	height: 28px;
+	float: right;
+	margin-top: 15px;
+}
+.header .hao123-day .city .weather img{
+	float: left;
+}
+.header .hao123-day .city .weather .i{
+	display: inline-block;
+	float: left;
+	height: 14px;
+	line-height: 14px;
+	margin-left:4px;
+	margin-top: 8px;
+	overflow: hidden;
+}
+.header .colweahter{
+	display: block;
+	float: right;
+	background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/B4/uF/o3/lc/nj/index_widthlg.png) no-repeat -342px -251px;
+	width: 11px;
+	height: 11px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.header .hao123-day .date{
+	width: 150px;
+	height: 60px;
+	float: left;
+	padding-left: 10px;
+	margin-top: 24px;
+	overflow: hidden;
+}
+
+.header .hao123-day .zodiac{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-top: 24px;
+	overflow: hidden;
+}
+.header .common{
+	width: 360px;
+	height: 60px;
+	float: right;
+	margin-right:100px;
+	margin-top: 24px;
+	overflow: hidden;
+}
+.header .common a{
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 0 8px 0 6px;
+}
+
+.baidu {
+	position: relative;
+	width: 1220px;
+	height: 122px;
+}
+.baidu .baidu_logo{
+   position:absolute;
+   top: 48px;
+   left: 166px;
+   width: 131px;
+   height: 40px;
+   background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/B4/uF/o3/lc/nj/index_widthlg.png');
+   background-position: -9px -212px;
+}
+.baidu form{
+	position:absolute;
+	top: 48px;
+	left: 316px;
+	width: 664px;
+	height: 44px;
+	float: left;
+	display: inline-block;
+	line-height: 44px;
+}
+.baidu form input[name="keyword"]{
+	width: 540px;
+	height: 42px;
+	line-height: 42px;
+	display: inline-block;
+	float: left;
+	border: 1px solid #666;
+}
+
+.baidu form input[type="submit"]{
+	width: 120px;
+	height: 44px;
+	line-height: 44px;
+	display: inline-block;
+	float: left;
+	border: 1px solid #666;
+	border-left: 0px;
+
+}
+.baidu .hot-news{
+	position: absolute;
+	right: 100px;
+	top:60px;
+}
+.baidu .hot-news a{
+	font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+
+.baidu .hot-keyword{
+	position: absolute;
+	left: 322px;
+    top: 94px;
+}
+
+.baidu .hot-keyword a{
+	font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+.menu{
+	position: relative;
+	width: 1190px;
+	height: 85px;
+    margin: 0 auto;
+}
+.menu .menu-kind{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 2px solid #0aa770;
+	border-left:1px solid #0aa770;
+}
+.menu .menu-kind .index{
+	position: absolute;
+	left: 0;
+	width: 80px;
+	height: 40px;
+	color: #fff;
+	background-color: #0aa770;
+	text-align: center;
+}
+.menu .menu-kind1{
+	margin-left: 80px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: 0 auto;
+}
+.menu .menu-kind1 a{
+	font-size: 16px;
+    color: #333;
+    text-align: center;	
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.menu .menu-kind1 a:hover{
+	color: #0aa770;
+	cursor: pointer;
+}
+
+.menu .menu-wap{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: 1px solid #666;
+	border-left: 1px solid #0aa770;
+	border-right: 1px solid #0aa770;
+	border-bottom: 1px solid #0aa770;
+}
+.menu .menu-wap span{
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.menu .menu-wap .wapname{
+	display: inline-block;
+	margin-left: 80px;
+	padding-right: 30px
+}
+.menu .menu-wap a{
+	color: #333;
+    font-size: 14px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+.menu .menu-wap span{
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	left: 0;
+	color: #0aa770;
+}
+.menu .menu-wap a:hover{
+	color: #f50;
+	cursor: pointer;
+}
+
+/** content start **/
+.content{
+	width: 1190px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+/** contentL start **/
+.content_L{
+	width: 278px;
+	height: 1000px;
+	float: left;
+}
+/** contentL left_nav_item1 start **/
+.content_L .left_nav_item1{
+	position: relative;
+	height: 150px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.content_L .left_nav_item1 i{
+	color: #333;
+    font-size: 14px;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-style: normal;
+    margin-left: 25px;
+}
+.content_L .left_nav_item1 i span{
+	color: #999;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.content_L .left_nav_item1 i a{
+	color: #333;
+}
+/** contentL left_nav_item2 start **/
+.content_L .left_nav_item2{
+	position: relative;
+	height: 420px;
+	border: 1px solid #ccc;
+	margin-top: 0;
+}
+
+.content_L .left_nav_item2 .startools-list a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.content_L .left_nav_item2 .startools-list a:hover{
+    color: red;
+    text-decoration:underline;
+}
+
+.content_L .left_nav_item2 .toplist .toplist-toptab{
+	height: 140px;
+	line-height: 30px;
+	background: #f7f7f7;
+}
+.content_L .left_nav_item2 .toplist .toplist-toptab a{
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    text-align: center;
+}
+.content_L .left_nav_item2 .toplist .toplist-toptab span{
+	color: #999;
+}
+
+.content_L .left_nav_item2 .toplist .toplist-newslink{
+	display: block;
+	margin-left: 30px;
+	margin-top: 5px;
+	width: 250px;
+	height:244px;
+	float: left; 
+	
+}
+.content_L .left_nav_item2 .toplist .toplist-newslink li{
+	list-style-type : disc; 
+}
+.content_L .left_nav_item2 .toplist .toplist-newslink a{
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	font-size: 14px;
+
+}
+
+/** contentR start **/
+.content_R{
+	width: 900px;
+	float: right;
+	overflow: hidden;
+}
+.nav-floor1 {
+	width: 898px;
+	height: 260px;
+	border: 1px solid #0aa770;
+	
+}
+.nav-floor1 .common-web1{
+	width: 900px;
+	height: 96px;	
+}
+
+.nav-floor1 .common-web2{
+	width: 900px;
+	height: 160px;
+}
+.nav-floor1  ul{
+	display: block;
+	float: left;
+}
+.nav-floor1 ul li{
+	position: relative;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 30px;
+	color: #000;
+	font-size: 14px;
+}
+
+.nav-floor1 a{
+	font-size: 14px;
+	outline: 0;
+	color: #333;
+}
+a.red{
+	color: #f50;
+}
+.content_R .nav-floor2{
+	width: 780px;
+	height: 30px;
+	
+	margin:0 auto;
+
+}
+.content_R .nav-floor2 a{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right:10px;
+	font-size: 12px;
+	color: #3b5998;
+}
+
+.content_R .nav-floor3{
+	width: 898px;
+	height: 150px;
+	border: 1px solid #0aa770;
+}
+.content_R .nav-floor3 ul{
+	display:inline-block;
+	width: 898px;
+	float: left;
+	margin-top: 15px;
+}
+.content_R .nav-floor3 ul li a{
+	width: 85px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	padding-right: 3px;
+}
+.content_R .nav-floor3 ul li a{
+	
+}
+.icon_baidu{
+	background: url('defaultIcon1229.png') no-repeat;
+	background-position: 0px -200px;
+    padding-left: 20px;
+}
+
+.icon_tmall{
+	background: url('defaultIcon1229.png') no-repeat;
+	background-position: 0px -479px;
+    padding-left: 20px;
+}
+.icon_itaobao{
+	background: url('defaultIcon1229.png') no-repeat;
+	background-position: 0px -360px;
+	position: absolute;
+    width: 16px;
+    height: 17px;
+    left: -20px;
+    top: 7px;
+}

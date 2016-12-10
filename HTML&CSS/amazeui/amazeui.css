@@ -1,0 +1,673 @@
+body{
+	color: #999;
+	font-family: "Microsoft YaHei";
+}
+*{
+	margin:0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	
+	font-family:"Microsoft YaHei";
+	text-decoration: none;
+	color: #333;
+}
+.body{
+	width: 1213px;
+}
+.top{
+	width: 1213px;
+	height: 42px;
+    background-color: #7c6aa6;
+    margin: 0 auto;
+}
+.top a{
+	color: #fff;
+	font-size: 14px;
+	vertical-align: top;
+}
+.top-left{
+	width: 250px;
+	height: 42px;
+	float: left;
+}
+.top .top-left img{
+	display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	margin-left:34px; 
+}
+.top .top-left a{
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	margin-left: 5px;
+}
+.top-left-triangle{
+	display: inline-block;
+	width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #fff;
+    margin-top: 19px;
+    margin-left: 5px;
+}
+.top .top-right {
+	height: 42px;
+	line-height: 42px;
+	float: right;
+	margin-right:34px; 
+}
+
+
+.header {
+   width: 1213px;
+   height:95px;
+   margin: 0 auto;
+   border-bottom: 1px solid #999; 
+}
+
+.header i{
+	font-style:normal;
+}
+.header .logo{
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+.header .contact-information{
+   	width: 790px;
+   	height:95px;
+	float: right;
+	margin-right: 38px;
+}
+.header .contact-information strong{
+	display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+.header .contact-information span{
+	font-size: 12px;
+    color: #969696;
+    display: block;
+    text-align: left;
+}
+.header .contact-information .telephone{
+	float: left;
+	width: 170px;
+   	height:50px;
+   	background: url(telephone-icon.png) no-repeat;
+   	padding-left: 40px;
+   	margin-top: 30px;
+}
+.header .contact-information .email{
+	float: left;
+	width: 170px;
+   	height:50px;
+    background: url(email-icon.png) no-repeat;
+   	padding-left: 40px;
+   	margin-top: 30px;
+}
+.header .contact-information .address{
+	float: left;
+	width: 170px;
+   	height:50px;
+   	background: url(address-icon.png) no-repeat;
+   	padding-left: 40px;
+   	margin-top: 30px;
+}
+.header .contact-information .connect{
+	margin-top: 25px;
+}
+.header .contact-information .connect a{
+	display: inline-block;
+	float: right;
+	width: 100px;
+   	height:40px;
+   	line-height: 40px;
+   	text-align: center;
+   	border: 1px solid  #59bcdb;  
+   	color: #59bcdb;
+    background-color: #fff;
+    font-size: 16px;
+
+}
+.header .contact-information .connect a:hover{
+    color: #fff;
+    background-color: #59bcdb;
+}
+.menu{
+	width: 1213px;
+	height: 80px;
+	margin:0 auto;
+}
+.menu a{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	padding-left: 60px;
+}
+
+.big-pic{
+    width: 1213px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(big-pic.jpg)  no-repeat;
+	background-size:100%;
+}
+
+.big-pic .big-pic-h1{
+	display: inline-block;
+	width: 1213px;
+	text-align: center;
+	padding-top: 100px;
+	
+}
+.big-pic .big-pic-h1 H1{
+	font-size: 46px;
+    color: #fff;
+    font-weight: 400; 
+}
+.big-pic .big-pic-p{
+	width:940px;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+.big-pic .big-pic-p p{
+	font-size: 18px;
+    opacity: .8;    
+}
+.big-pic .big-pic-button{
+	width: 130px;
+	margin:20px auto;
+}
+.big-pic .big-pic-button a{
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 30px;
+	background: red; 
+	color: #fff;
+	letter-spacing: 2px;
+}
+.school-item{
+	width:1213px;
+	height: 100px;
+	border-bottom: 1px solid #999;
+	margin:0 auto;
+}
+.school-item strong{
+	display: inline-block;
+	width: 260px;
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+    color: #262626;
+    margin-top: 7px;
+}
+.school-item span{
+	display: inline-block;
+	width: 260px;
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #969696;
+    margin-bottom: 0;
+}
+
+.school-item .Office-Mobile{
+	display: inline-block;
+	width:280px;
+	border-right: 1px solid #999;
+	margin-top: 10px;
+	float: left;
+	background: url(icon1.png) no-repeat 10px 10px;
+	padding-left: 15px;
+}
+
+
+.school-item .Mobile-website{
+	display: inline-block;
+	width:280px;
+	border-right: 1px solid #999;
+	margin-top: 10px;
+	float: left;
+	background: url(icon2.png) no-repeat 10px 10px;
+	padding-left: 15px;
+}
+
+.school-item .HTML5-mobile{
+	display: inline-block;
+	width:280px;
+	border-right: 1px solid #999;
+	margin-top: 10px;
+	float: left;
+	background: url(icon3.png) no-repeat 10px 10px;
+	padding-left: 25px;
+}
+.school-item .How-we-work{
+	display: inline-block;
+	width:280px;
+	border-right: 1px solid #999;
+	margin-top: 10px;
+	float: left;
+	background: url(icon4.png) no-repeat 10px 10px;
+	padding-left: 15px;
+}
+/**统一设置节样式开始**/
+.section-header{
+	height: 140px;
+	line-height: 140px;
+	text-align: center;
+	color: #333;
+	font-size: 50px;
+	font-weight: 300;
+}
+.section-header-text{
+	width: 1164px;
+	text-align: center;
+	font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+/**统一设置节样式结束**/
+.features-item{
+	width: 1213px;
+	height: 300px;
+	margin-top:50px;
+	margin: 0 auto;
+}
+.features-item ul{
+	margin-left: 25px;
+}
+.features-item ul li{
+	display: inline-block;
+	width:264px;
+	float:left; 
+	margin-left: 25px;
+}
+.features-item h3{
+	margin-top: 20px;
+    font-size: 16px;
+    color: #262626;
+}
+   
+.features-item p{
+	margin-top: 10px;
+   	font-size: 15px;
+    line-height: 23px;
+    color: #969696;
+} 
+.MORE{
+	width: 140px;
+	margin:90px auto;
+}
+.MORE a{
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 30px;
+	background: #59bcdb; 
+	color: #fff;
+	letter-spacing: 2px;
+}
+.Administration {
+	width: 1213px;
+	height: 445px;
+	margin: 0 auto;
+}
+.Administration .Administration-left{
+	width: 608px;
+	height: 445px;
+	float: left;
+	background: #fafafa;
+}
+
+.Administration-left-text li{
+	width: 371px;
+	height: 110px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.Administration-left-text .user{
+	background: url(icon11.png) no-repeat;
+	padding-left: 80px;
+}
+.Administration-left-text .Journal{
+	background: url(icon22.png) no-repeat;
+	padding-left: 80px;
+}
+.Administration-left-text .application{
+	background: url(icon33.png) no-repeat;
+	padding-left: 80px;
+}
+.Administration-left-text h3{
+	font-size: 20px;
+    color: #262626;
+    font-weight: bold;
+    margin-top: 10px;
+}
+   
+.Administration-left-text p{
+	margin-top: 10px;
+   	font-size: 16px;
+    line-height: 23px;
+    color: #969696;
+} 
+.Administration .Administration-right{
+	width: 605px;
+	height: 445px;
+	background: url(promo_detailed_bg.jpg) no-repeat;
+	float: left;
+}
+.Administration-right .Administration-right-p{
+	width: 496px;
+	height: 185px;
+	background: rgba(27,31,32,.7);
+    border-radius: 3px;
+    margin-top:110px;
+    margin-left: 28px;
+}
+.Administration-right .Administration-right-p p{
+	font-size: 20px;
+    line-height: 36px;
+    font-weight: 300;
+    padding: 38px 20px 38px 28px;
+    text-align: left;
+}
+.Administration-right-button{
+	width: 110px;
+	margin-top:50px;
+	margin-left: 220px;
+}
+.Administration-right-button a{
+	display: inline-block;
+	width: 110px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 30px;
+	background: #dd514c; 
+	color: #fff;
+	letter-spacing: 2px;
+}
+.service-item{
+	width: 1213px;
+	height: 450px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+
+}
+.service-item ul{
+	display: inline-block;
+	width: 252px;
+	height: 350px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left:35px;
+}
+
+.service-item h3{
+	font-size: 20px;
+    color: #262626;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+}
+   
+.service-item p{
+	margin-top: 20px;
+   	font-size: 16px;
+   	width: 228px;
+    line-height: 23px;
+    color: #969696;
+    text-align: center;
+    margin-left: 12px;
+} 
+.service-item a{
+    display: inline-block;
+    width: 125px;
+    height: 26px;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: #0e90d2;
+}
+.service-item1 span{
+	display: block;
+	width: 80px;
+	height: 60px;
+	margin-top: 30px;
+	margin-left: 90px;
+	background:url(service-item.jpg) no-repeat;
+	background-position: -9px -12px;
+}
+.service-item2 span{
+	display: block;
+	width: 80px;
+	height: 60px;
+	margin-top: 30px;
+	margin-left: 90px;
+	background:url(service-item.jpg) no-repeat;
+	background-position: -17px -77px;
+}
+.service-item3 span{
+	display: block;
+	width: 80px;
+	height: 60px;
+	margin-top: 30px;
+	margin-left: 90px;
+	background:url(service-item.jpg) no-repeat;
+	background-position: -17px -139px;
+}
+.service-item4 span{
+	display: block;
+	width: 80px;
+	height: 60px;
+	margin-top: 30px;
+	margin-left: 90px;
+	background:url(service-item.jpg) no-repeat;
+	background-position: -17px -202px;
+}
+.Cooperative-partner{
+	width: 1213px;
+	height: 115px;
+	margin: 0 auto;
+}
+.Cooperative-partner a{
+	display: inline-block;
+	width: 170px;
+	height: 115px;
+	line-height: 115px;
+	float: left;
+	padding-left: 30px;
+}
+
+.contact-card{
+	width: 1213px;
+	height: 420px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+
+}
+.contact-card ul{
+	display: inline-block;
+	width: 290px;
+	height: 384px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-left:70px;
+}
+
+.contact-card h3{
+	font-size: 20px;
+    color: #262626;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+   
+.contact-card p{
+   	font-size: 16px;
+   	width: 228px;
+    line-height: 23px;
+    color: #969696;
+    text-align: center;
+    margin-left: 12px;
+}
+.contact-card strong{
+	font-weight: bold;	  
+}
+
+.contact-card .card1 a{
+    display: inline-block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 66px;
+    margin-top: 30px;
+    color: #0e90d2;
+    border: 2px solid #0e90d2;
+    text-align: center;
+}
+.contact-card .card2 a{
+    display: inline-block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 66px;
+    margin-top: 30px;
+    color: #0e90d2;
+    border: 2px solid #0e90d2;
+    text-align: center;
+}
+.contact-card .card3 a{
+    display: inline-block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 66px;
+    margin-top: 30px;
+    color: #0e90d2;
+    border: 2px solid #0e90d2;
+    text-align: center;
+}
+.contact-card .card4 a{
+    display: inline-block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 66px;
+    margin-top: 30px;
+    color: #0e90d2;
+    border: 2px solid #0e90d2;
+    text-align: center;
+}
+.contact-card .card1 span{
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 auto;
+    margin-top: 60px;
+	background:url(card-item.jpg) no-repeat;
+	background-position: -24px -24px;
+}
+.contact-card .card2 span{
+	display: block;
+	width: 60px;
+	height: 48px;
+	margin: 0 auto;
+    margin-top: 60px;
+	background:url(card-item.jpg) no-repeat;
+	background-position: -24px -70px;
+}
+.contact-card .card3 span{
+	display: block;
+	width: 37px;
+	height: 54px;
+	margin: 0 auto;
+    margin-top: 60px;
+	background:url(card-item.jpg) no-repeat;
+	background-position: -34px -112px;
+}
+.bottom{
+	width: 1213px;
+	height: 376px;
+	margin: 0 auto;
+	background: #6745b4;
+	opacity: 0.5;
+	color: #fff;
+}
+.bottom .box strong{
+	display: block;
+	color: #fff;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 700;  
+}
+.bottom ul a{
+	color: #fff;
+}
+.bottom .box{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-left: 42px;
+	margin-top: 50px;
+}
+.box ul li{
+	width: 240px;
+	height: 30px;
+}
+.box ul li a{
+	float: left;
+	width: 200px;
+	height: 48px;
+	line-height: 48px;
+	border-bottom: 1px solid rgba(255,255,255,.1); 
+}
+.box ul li span{
+	float: right;
+	height: 48px;
+	line-height: 48px;
+}
+.bottom .bottom1-text1{
+	height: 125px;
+	margin-top: 20px;
+	font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+}
+.bottom .bottom1-text2{
+	height: 75px;
+	margin-top: 40px;
+	font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+}
+.bottom .bottom2-link{
+	width: 240px;
+	height: 250px;
+	margin-top:30px;
+	margin-left: 0;
+}
+.bottom3-1{
+	margin-top: 40px;
+}

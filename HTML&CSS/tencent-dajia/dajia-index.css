@@ -1,0 +1,187 @@
+form input{
+	margin:0;
+	padding: 0; 
+	outline: 0;
+}
+body{
+	background-color: #fff;
+	font-size: 16px;  
+    margin: 0;
+    padding: 0;  
+    font-family: "Microsoft YaHei";
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.top{
+   display: block;
+   width: 1240px;
+   height: 60px;
+   margin: 0 auto;
+   margin-top: 40px ;
+}
+
+
+.top .logo{
+	float: left;
+	width: 133px;
+	height: 60px
+}
+
+.top .menu{
+	float: left;
+	padding-left: 66px;
+	width: 400px;
+	height: 60px;
+}
+
+.top .menu a{
+	padding:7px 20px;
+	text-align: center;
+	line-height: 60px;
+
+}
+.top .menu a:first-child{
+	background-color: #ccc;
+    border-radius:30px;
+}
+.top .menu a:hover{
+	background-color: #ccc;
+    border-radius:30px;
+}
+
+.top .browse{
+	float: right;
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.top .browse a{
+	display: inline-block;
+	float: left;
+	margin-left: 30px;
+}
+.top .browse form {
+
+	display: inline;
+	float: left;
+	margin-left: 30px;
+}
+.top .browse form input{
+	margin-top: 14px;
+	float: left;
+	width: 140px;
+	height: 26px;
+
+}
+.top .browse form input[type="submit"]{
+
+	width: 40px;
+	height: 30px;
+	background: black;
+	color: white;
+	border:0;
+	
+}
+
+.middle{
+	width: 1240px;
+	height: 1000px;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+}
+.middle .big_img{
+	float: left;
+	width: 879px;
+	height: 300px;
+}
+.middle .author{
+	float: right;
+	width: 318px;
+	height: 328px;
+}
+.middle .layer02{
+	width: 879px;
+	height: 100%;
+	float: left;
+	margin-top: 40px;
+}
+.layer02 .article_list{
+	width: 879px;
+	height: 180px;
+	margin-bottom: 30px;
+}
+.middle .thumb{
+	width: 290px;
+	height: 180px;
+	float: left;
+}
+.middle .content{
+	width: 580px;
+	height: 160px;
+	float: left;
+	margin-left: 5px;
+	color: #888;
+}
+.middle .content h2{
+	margin-top: 0px;
+}
+.middle .content h2 a:hover{
+	color: #5a6e91;
+}
+.middle .content .attitube{
+	height: 45px;
+	width: 100%;
+	margin-top: 25px;
+}
+.attitube .avatar{
+	width: 45px;
+	height: 45px;
+	display: block;
+	float: left;
+}
+.attitube .author_name{
+	vertical-align: middle;
+}
+.attitube .atti_text{
+	float: left;
+	margin-top: 10px;
+	width: 535px;
+}
+.attitube .date{
+	padding-left: 330px;
+}
+.attitube .category{
+	float: right;
+	color: #5a6e91;
+}
+.middle .layer03{
+	float: right;
+    width: 318px;
+    height: 328px;
+}
+.middle .layer03 i.top3{
+	font-style: normal;
+	width: 33px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    background: #494949;
+    color: white;
+    margin-right: 23px;
+}
+.middle .layer03 li{
+	margin-top: 20px;
+}
+.middle .layer03 a:hover{
+	color: #888;
+};

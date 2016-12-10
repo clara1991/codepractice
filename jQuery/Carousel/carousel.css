@@ -1,0 +1,96 @@
+body{
+ 	margin: 0;
+ 	padding: 0;
+ 	width: 100%;
+ 	height: auto;
+ 	color: #fff;
+ 	background: #fff;
+}
+*{
+ 	margin: 0;
+ 	padding: 0;
+}
+ul,li,ol{
+ 	list-style: none;
+ 	overflow: hidden;
+}
+i{
+ 	font-style: normal;
+}
+img{
+   border: 0;
+}
+a{
+ 	text-decoration: none;
+}
+.demo{
+	margin: 0 auto;
+	width: 950px;
+	height: 640px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px #c1c1c1;
+}
+.demo .control{
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 76px;
+	height: 112px;
+	background: url(images/buttons.png) no-repeat;
+	z-index: 100;
+}
+.demo .prev{
+	left: 180px;
+	background-position: 0 0;
+}
+.demo .next{
+	right: 180px;
+	background-position: -76px 0;
+}
+.carousel{
+	position: relative;
+    overflow: hidden;
+    display: block;
+    width: 950px;
+    height: 640px;
+}
+.carousel ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3800px;
+	height:640px;
+	margin-left: 0px;
+	-webkit-transition: margin-left 1s;
+}
+.carousel ul li{
+	display: inline;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.carousel ul li img{
+	width: 950px;
+	height: 640px;
+}
+.carousel ul li i{
+	display: block;
+	position: absolute;
+	bottom: 60px;
+	right: 100px;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	background: #fff;
+	text-align: center;
+	line-height: 60px;
+	opacity: .4;
+	color: red;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+
+@-webkit-keyframes move{
+}

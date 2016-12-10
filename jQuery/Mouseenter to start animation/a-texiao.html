@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>特效</title>
+</head>
+<style type="text/css">
+	*{
+		color: #fff;
+	}	
+	a{
+		text-decoration: none;
+	}
+	body{
+		background: #ccc;
+	}
+	ul,li{
+		list-style: none;
+		margin: 0;
+		padding: 0; 
+	}
+	.tool{
+		position: fixed;
+		bottom: 10%;
+		right: 20px;
+	}
+	.js_btn{
+		position: relative;
+		width: 100px;
+		height: 100px;	
+	}
+	.tool ul{
+		position: absolute;
+		top: -330px;
+		display: none;
+	}
+	.tool ul li{
+		margin-bottom: 10px;
+	}
+	li a{
+		display: block;
+		width: 100px;
+		height: 100px;
+		background: green;
+		border-radius: 100px;
+		text-align: center;
+		line-height: 100px;
+	}
+	li:first-child{
+		padding-top: 0;
+	}
+	.tool_menu{
+		display: block;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		background: green;
+		text-align: center;
+		line-height: 100px;	
+	}
+</style>
+<body>
+	<div class="tool">
+		<div class="js_btn">
+			<ul id="js_tool_item">
+				<li><a href="">AAA</a></li>
+				<li><a href="">BBB</a></li>
+				<li><a href="">CCC</a></li>
+			</ul>
+			<span class="tool_menu">Click</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-1.8.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".js_btn").mouseenter(function(){
+			$(this).find("#js_tool_item").fadeIn();
+		})
+		.mouseleave(function(){
+			$(this).find("#js_tool_item").fadeOut();
+		});
+
+		$("#js_tool_item").find("a").mouseenter(function(){
+			$(this).css({
+				"background": "red"
+			});
+		})
+		.mouseleave(function(){
+			$(this).css({
+				"background": "green"
+			});
+		});
+	})
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		.clicked{
+			background:red;
+			font-size:200%;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("a").click(function(){
+				$("span").css({
+					'background':'red'
+				})
+				return false;
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<div class="weather">
+	   	<img class="weather-icon" src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/weather/v1/a1.png"/>
+		<span style="vertical-align:top">多云</span><span>21°</span>
+		<a href="">click me</a>
+	</div>
+</body>
+</html>

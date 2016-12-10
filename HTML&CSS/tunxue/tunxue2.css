@@ -1,0 +1,328 @@
+body{
+	font-size: 12px;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+html, body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+	background-color: #fff;
+}
+body{
+	height: auto; 
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin:0;
+	padding: 0;
+}
+ul li,ol li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+body{
+	width:100%;
+	height: 5253px; 
+	background: #fff;
+}
+.header{
+	width: 100%;
+	min-width: 1080px;
+	height: 330px;
+	background: #2c566e;
+}
+.top{
+	width: 1080px;
+	height: 100px;
+	margin: 0 auto;
+}
+.top img{
+	display: inline-block;
+	float: left;
+	height: 100px;
+	overflow: hidden;
+}
+.top h1{
+	width: 370px;
+	height: 100px;
+	float: right;
+	line-height: 100px;
+	font-size: 26px;
+	color: #ddd;
+	text-align: right;
+	font-weight: normal;
+}
+.in,.content{
+	width: 1080px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.user-info{	
+	height: 32px;
+	background: #fafafa;
+}
+.user-info a{
+	color: #333;
+}
+.user-info a:hover{
+	color: #1cb177;
+}
+.user-info .city{
+	display: inline-block;
+	line-height: 32px;
+	float: left;
+	font-size: 14px;
+}
+.user-info .separate{
+	padding: 0 5px;
+}
+.user-info .login{
+	display: inline-block;
+	line-height: 32px;
+	float: right;
+	font-size: 14px;
+}
+.logo{
+	height: 150px;
+	margin:0 auto;
+	background: #fff;
+	overflow: hidden;
+}
+.logo .logo-pic{
+	display: inline-block;
+	padding-top: 20px;
+}
+.logo .phonenum{
+	display: inline-block;
+	float: right;
+	padding-top: 50px;
+}
+.logo .phonenum p{
+	font-size: 12px;
+	color: #ddd;
+}
+.logo .phonenum .number{
+	font-size: 26px;
+	color: #333;
+	font-weight: bold;
+}
+.nav{
+	width: 100%;
+	height: 48px;
+	background: #1cb177;
+}
+.nav a{
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 70px;
+	color: #fff;
+	font-size: 16px;
+}
+.nav a:hover{
+	color: #ddd;
+}
+.banner{
+	width:100%;
+	min-width: 1080px;
+	height:auto;
+	max-height: 400px;
+}
+.banner img{
+	width:100%;
+	height:auto;
+	max-height: 400px;
+}
+.content{
+	position: relative;
+	width: 100%;
+	min-width: 1080px;
+	height: 4100px;
+}
+.content .course-btn{
+	position: fixed;
+	top: 500px;
+	right: 10px;
+	width: 100px;
+	height: 400px;
+	z-index: 101;
+}
+.course-btn .course_list{
+	position: absolute;
+	top: -280px;
+	display: none;
+	width: 100px;
+	height: 300px;
+}
+.course_list a{
+	display: block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	margin: 10px;
+	border-radius: 50px;
+	background: #1cb177;
+	opacity: 0.8;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	z-index: 100;
+}
+.js_item{
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	border-radius: 50px;
+	background: #1cb177;
+	opacity: 0.8;
+	font-size: 14px;
+	font-weight: bold;
+	z-index: 100;
+	color: #fff;
+	text-align: center;
+	line-height: 80px;
+}
+.content .menu{
+	position: absolute;
+    top: 50px;
+    left: -100px;
+    display: inline-block;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    z-index: 10;
+    background: #fff;
+}
+.content .menu-item{
+	display: block;
+	padding: 20px 10px;
+}
+.content .menu-item a{
+	font-size: 14px;
+	color: #333;
+}
+.content .menu-item a:hover{
+	color:#1cb177; 
+}
+.content .rec-agency{
+	position: relative;
+	width: 1080px;
+	height: 800px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-top:1px solid #ddd;
+}
+.content .rec-agency h2{
+    position: absolute;
+    top: -25px;
+    left: 478px;
+    padding: 0 10px;
+    height: 45px;
+    font-size: 28px;
+    background: #fff;
+    color: #333;
+    border-bottom: 3px solid #1cb177;
+}
+.content .rec-agency .agency-list{
+	margin-top: 50px;
+    margin-left: 30px;
+}
+.content .rec-agency .agency-item{
+	display: inline-block;
+    float: left;
+    width: 240px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+}
+.content .rec-agency .agency-item img{
+	width: 240px;
+}
+.content .rec-agency .agency-item a{
+    display: block;
+    margin: 10px auto;
+    color: #333;
+    font-size: 18px;
+    text-align: center; 
+}
+.content .rec-agency .agency-item p{
+	text-align: center;
+	color: #ddd;
+	font-size: 14px;
+	line-height: 20px;
+}
+.more-info{
+	width: 100%;
+	min-width: 1080px;
+	height: 252px;
+	color: #fff;
+	background: #1cb177;
+}
+.more-info .info{
+	display: inline-block;
+	width: 730px;
+	height: 250px;
+	float: left;
+}
+.more-info .info-item{
+	display: inline-block;
+	float: left;
+	margin: 30px 50px;
+}
+.more-info .info-item h2{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.more-info .info-item p{
+	font-size: 14px;
+	line-height: 25px;
+}
+.more-info .focus{
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	margin-left: 50px;
+}
+.more-info .focus img{
+	width: 100px;
+	height: 100px;
+	padding:50px 50px 10px 50px;
+}
+.more-info .focus p{
+	text-align: center;
+	line-height: 20px;
+}
+.footer{
+	width: 100%;
+	height: 168px;
+	background: #fff;
+	color: #333;
+	font-size: 14px;
+}
+.footer .in{
+	text-align: center;
+}
+.footer .links{
+	padding-top: 50px;
+}
+.footer .links a{
+	color: #333;
+	padding: 0 5px;
+}
+.footer .links a:hover{
+	color: #1cb177;
+}
+.footer p{
+	margin-top: 10px;
+	line-height: 15px;
+}
