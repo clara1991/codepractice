@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>test</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#service{
+		width:156px;
+		height: 130px;
+		background: #333;
+		margin: 0 auto;
+	}
+	#service ul{
+		height: 32px;
+		margin: 0;
+		padding: 0; 
+	}
+	.service_item{
+		display:inline-block;
+		width: 50px;
+		height:30px;
+		line-height: 30px;
+		border: 1px solid #ddd;
+		text-align: center;
+		color: #fff;
+		float: left;
+	}
+	#detail{
+		position: relative;
+		display: block;
+		width:156px;
+		height:100px;
+	}
+	.item{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display:none;
+		width:156px;
+		height:100px;
+	}
+	.red{
+		background:red;
+	}
+	.yellow{
+		background:yellow;
+	}
+	.blue{
+		background:blue;
+	}
+	.active{
+		display: block;
+	}
+	</style>
+
+</head>
+<body>
+	<div id="service">
+		<ul>
+			<li class="service_item red">1</li>
+			<li class="service_item">2</li>
+			<li class="service_item">3</li>
+		</ul>
+		<div id="detail" class="detail">
+			<div class="item red active">
+				aaaa
+			</div>
+			<div class="item yellow">
+				bbbb
+			</div>
+			<div class="item blue">
+				cccc
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script>
+	//一个核心思想：先将他们变为一致，然后在需要特殊化的对象上加上特殊操作//
+		$(function() {
+			$("#service li").mouseover(function(){
+				var x = $(this).index();//获取当前点击的li的索引值
+				var cls = ["red","yellow","blue"];
+				for (var i = 0; i < cls.length; i++) {
+					if(i != x){
+						$("#service li").eq(i).removeClass(cls[i]);
+					}
+				}//索引值不等于索引值i的，去掉li上特殊class
+				$(this).addClass(cls[x]);//给当前的li添加相应的class
+				$("#detail div").each(function(y){
+					$(this).removeClass("active");//所有div先去掉active class，第2 3 个div上都没有active这个class，jquery直接跳过不处理
+					if(y == x){
+						$(this).addClass("active");//再给符合要求的加上active class
+					}
+				});
+ 			});			
+		});			
+	</script>
+</body>
+</html

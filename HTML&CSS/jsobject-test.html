@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title></title>
+	<style type="text/css">
+     div {
+     	width: 50%;
+     	height: 50px;
+     	color: #fff;
+     	background-color: black;
+     }
+     button{
+     	display: block;
+     	background-color: red;
+     }
+	</style>
+</head>
+<body>
+	<h1>使用JavaScript求1到99的累加之和</h1>
+	<div id="first">1+2+3+4+....+99=</div>
+	<button type="button" onclick="myfunction()">点击查看答案</button>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	function print(s){
+		document.getElementById("first").innerHTML=s;
+	}
+	//第一个使用while循环
+	// function myfunction(){
+	// 	var count=0,sum=0;
+	//     while(count<100){
+	//     	count++;
+	// 	    sum += count;}
+	// print(sum);
+	 // }
+
+	//使用for循环又有什么不一样呢
+	function myfunction(){
+	 	var sum=0;
+		 for (var i = 0;i<=100;i++) {
+		 	sum += i;
+	 	}
+	 	print(sum);
+	}
+
+	function print1(s){
+		return document.write(s+"<br/>");
+	}
+	var colors = ["red","blue","green"];
+	print1(colors[0]);
+	print1(colors[1]);
+	print1(colors[2]);
+	colors[3]="black";
+	print1(colors[3]);
+	print1("这个数组的长度是"+colors.length);
+	
+	// 动态添加div
+	document.write("<h1>这是一个主标题</h1>");
+	document.write("<p id='p1'>This is a paragraph</p>");
+    document.getElementById("p1").style.color="red";
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>test</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#service{
+		width:156px;
+		height: 130px;
+		background: #333;
+		margin: 0 auto;
+	}
+	#service ul{
+		height: 32px;
+	}
+	.service_item{
+		display:inline-block;
+		width: 50px;
+		height:30px;
+		line-height: 30px;
+		border: 1px solid #ddd;
+		text-align: center;
+		color: #fff;
+		float: left;
+	}
+	#detail{
+		position: relative;
+		display: block;
+		width:156px;
+		height:100px;
+	}
+	.red{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display:none;
+		width:156px;
+		height:100px;
+		background:red;
+	}
+	.yellow{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display:none;
+		width:156px;
+		height:100px;
+		background:yellow;
+	}
+	.blue{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display:none;
+		width:156px;
+		height:100px;
+		background:blue;
+	}
+	</style>
+</head>
+<body>
+	<div id="service">
+		<ul>
+			<li class="service_item">1</li>
+			<li class="service_item">2</li>
+			<li class="service_item">3</li>
+		</ul>
+		<div id="detail" class="detail">
+			<div class="red"></div>
+			<div class="yellow"></div>
+			<div class="blue"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="..\jquery.js"></script>
+	<script>
+		$(function() {
+			$("#detail div").hide();
+			$("#detail div").eq(0).show();
+			$("#service li").each(function(){
+				$("#service li").click(function(){
+					var x = $(this).index(),
+					    goal_detail = $("#detail div").eq(x),
+					    bg = goal_detail.attr("background");
+	     			goal_detail.show();
+     			});			
+			});			
+		});
+	</script>
+</body>
+</html

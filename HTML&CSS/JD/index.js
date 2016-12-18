@@ -1,3 +1,5 @@
+"use strict";
+
 $(function(){
 	var my_jd_con = $("#js_myJd_con");
 	$("#js_myJd").mouseover(function(){
@@ -15,7 +17,23 @@ $(function(){
 	.mouseout(function(){
 		$("this").css("background","none");
 		wap_nav.removeClass("js_nav").addClass("hide");
-
 	})
-
+	$(".choiceitem").mouseover(function(){
+		$("#choicemore").show();
+	}).mouseout(function(){
+		$("#choicemore").hide();
+	})
+	var entry = $(".service_entry"),
+	    detail = $(".service_detail");
+	$(".service_item").mouseenter(function(){
+		entry.hide();
+		detail.show();
+	});
+	$("#js_service_close_btn").click(function(){
+		detail.hide();
+		entry.show();
+		return false;
+	});
 })
+
+

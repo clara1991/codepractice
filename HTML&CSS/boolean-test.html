@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title>布尔（boolean）型属性</title>
+	<style type="text/css">
+	div {
+	  display: inline-block;
+	  /*width: 10%;*/
+	  padding: 15px;
+	  margin: 15px 0;
+	  background-color: #fff;
+	  box-shadow: 10px 10px 10px red, inset 10px 10px 10px #333;
+	}
+	</style>
+</head>
+<body>
+	<p>布尔型属性可以在声明时不赋值。XHTML 规范要求为其赋值，但是 HTML5 规范不需要。</p>
+	<input type="text" disabled><!--表示此时不可输入-->
+	<input type="checkbox" value="1" checked><!--表示此项已被选中-->
+	<select>
+	  <option value="1">1</option>
+	  <option value="1" selected>2</option><!--表示此项为默认选项-->
+	  <option value="1">3</option>
+	  <option value="1">4</option>
+	  <option value="1">5</option>
+	</select>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("select").append("<option value='sss'>6</option>");
+		$("body").append("<div>看看我的内阴影和外阴影</div>");
+	});		
+	</script>
+</body>
+</html>

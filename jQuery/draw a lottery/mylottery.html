@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>九宫格抽奖</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	ul,li{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		width: 400px;
+	}
+	.item{
+		width: 120px;
+		height: 120px;
+		float: left;
+		line-height: 120px;
+		border: 1px solid red;
+	}
+	.active{
+		background: yellow;
+		color: red;
+	}
+	</style>
+</head>
+<body>
+	<div id="service">
+		<ul>
+			<li class="item">1等奖</li>
+			<li class="item">2等奖</li>
+			<li class="item">3等奖</li>
+			<li class="item">4等奖</li>
+			<li class="item"><a id="doLottery" href="javascript:void(0);">抽奖</a></li>
+			<li class="item">5等奖</li>
+			<li class="item">6等奖</li>
+			<li class="item">7等奖</li>
+			<li class="item">8等奖</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script>
+		function lottery(el, num, cb) {
+			this.el = el || false, this.num = num || Math.ceil(Math.random()*8), this.cb = cb || false, this.time=100, this.play();
+		}
+		lottery.prototype = {
+			play : function(){
+				var _this  = this,
+					idx = 0,
+					begin = 2000 + Math.random() * 2000,//产生一个2000到4000（包含2000，但不包含4000）的随机数
+					order = [0,1,2,5,8,7,6,3],//定义抽奖顺序的数组，基于九宫格而言，都是顺时针方向
+					gifts = [1,2,3,5,8,7,6,4],//定义奖品顺序的数组，基于九宫格而言，都是顺时针方向
+					len = order.length;//抽奖数组的长度，我们可以看到，是8
+				
+				//定时器里面嵌套定时器，让active滚动的间隔时间与抽奖的提示时间错开，先让active停在指定位置，在弹出抽奖提示信息
+				var timer = setInterval(function(){
+					if(idx >= len) idx = 0;
+					$(".active").removeClass("active");	//去掉所有的active class,让所有的item保持一致		
+					$(_this.el[order[idx]]).addClass("active");//在选中的元素上增加active class
+					if(begin < 1000 && _this.num == gifts[idx]){
+					//按顺时针顺序滚动抽奖，1，2，3，5，8，7，6，4等奖	
+						var prize = $(_this.el[order[idx]]).html();
+						//获取当前抽到的格子里面的html（就是那些1等奖啊，2等奖啊，之类的）
+						setTimeout(function(){
+							alert( "恭喜您，中了"+prize);_this.cb && _this.cb();},500);//每500毫秒滚动一次	
+						clearInterval(timer);//清除定时器						
+					}
+					idx++;//索引依次增加，达到按顺序滚动的目的，当他大于8的时候，我们让他又从0开始
+					begin -= 100;//begin初始化假设是4000，定时器执行一次减100，当他减到1000的时候，就进入了我们的判断中			
+				},this.time);//外面这个定时器的this.time是100，前面有声明 
+			}
+		};
+		var lotteryBtn = document.getElementById("doLottery");
+		lotteryBtn.onclick = function(){
+			/**
+			* 第一个参数是抽奖dom
+			* 第二个参数是抽中哪个奖品，eg 1=1等奖,空表示随机抽奖
+			* 第三个参数是回调函数
+			*/
+			new lottery(document.querySelectorAll("#service .item"),null,function(){
+				lotteryBtn.innerHTML = "再来一次";
+				//lotteryBtn.onclick = null; 取消抽奖事件
+			});
+			return false;
+		};
+	</script>
+</body>
+</html

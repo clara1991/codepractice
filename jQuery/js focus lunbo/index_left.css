@@ -1,0 +1,76 @@
+* {
+	margin:0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+i {
+   font-style: normal;
+}
+.hide{
+	display: none;
+}
+#banner {
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 40px;
+	overflow: hidden;
+}
+#picscroll {
+	position: relative;
+	width: 3500px;
+	height: 306px;
+	overflow: hidden;
+}
+#piclink {
+	font-size: 0;
+	width: 700px;
+    overflow: hidden;
+    -webkit-transition:margin-left 1s;
+
+}
+.piclink img{
+	display: inline-block;
+	float: left;
+}
+.arrow {
+	position: absolute;
+	top: 40%;
+	font-size: 20px;
+	color: #fff;
+	z-index: 100000;
+	display: block;
+	width: 20px;
+	height: 80px;
+	background: rgba(102,102,102,0.7);
+	text-align: center;
+	vertical-align: middle;
+	line-height: 80px;
+	opacity: 1;
+}
+.prev {
+	left: 0;	
+}
+.next {
+	left: 680px;
+}
+#choosebtn span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	text-align: center;
+	color: #fff;
+	background: rgba(102,102,102,0.5);
+	transition: all linear 0.2s;
+}
+#choosebtn span:hover{
+	background: #888;
+}
+#choosebtn span.on {
+	background: red;
+	color: yellow;
+}
