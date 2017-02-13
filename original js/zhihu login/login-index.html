@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title>知乎-与世界分享你的知识、经验和见解</title>
+	<link rel="stylesheet" type="text/css" href="login-index.css">
+</head>
+<body>
+	<div class="loginarea">
+		<div class="logo"></div>
+		<h2 class="subtitle">与世界分享你的知识、经验和见解</h2>
+		<div class="signin-register">
+			<a id="register" class="register active" href="#">注册</a>
+			<a id="signin" class="signin " href="#">登录</a>
+		</div>
+		<div id="register-entry" class="entry register-entry">
+			<form>
+				<input id="name" type="text" palceholder="昵称">
+				<input id="telephonenum" type="text" palceholder="手机号（仅支持中国大陆）">
+				<input id="register_password" type="text" palceholder="密码不少于6位">
+			</form>
+			<div class="getmore">
+				<button id="reisterzhihu" class="reisterzhihu">注册知乎</button>
+				<p style="text-align:center;">点击「注册」按钮，即代表你同意<a href="">《知乎协议》</a></p>
+			</div>
+			<button class="downloadzhihu">下载知乎App</button>
+		</div>
+		<div id="signin-entry" class="entry signin-entry hide">
+			<form>
+				<input id="uesrname" type="text" palceholder="手机号或邮箱">
+				<input id="signin_password" type="text" palceholder="密码">
+			</form>
+			<div class="getmore">
+				<button id="signinzhihu" class="signinzhihu">登录</button>
+				<p>
+					<i><a class="mobilesignin" href="">手机验证码登录</a></i>
+					<span><a class="cannotsignin" href="">无法登录？</a></span>
+				</p>
+				<p><a class="socialIDsignin" href="">社交帐号登录</a></p>
+			</div>
+			<button class="downloadzhihu">下载知乎App</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var $get=function (el){return document.getElementById(el);}
+		var oRegister      = $get("register"),
+			oSignin        = $get("signin"),
+			oRegister_entry= $get("register-entry"),
+			oSignin_entry  = $get("signin-entry"),
+			reisterzhihu   = $get("reisterzhihu"),
+			signinzhihu    = $get("signinzhihu");
+
+		myfunction();
+		function myfunction(){
+			oRegister.onclick=function(){
+				oSignin.className="";
+				oRegister.className="active";
+				oSignin_entry.className="hide";
+				oRegister_entry.className="entry register-entry";
+			}
+			oSignin.onclick=function(){
+				oRegister.className="";
+				oSignin.className="active";
+				oRegister_entry.className="hide";
+				oSignin_entry.className="entry signin-entry";
+			}
+		}
+
+		checkinput();
+		function checkinput(){
+			reisterzhihu .onclick=function(){
+				var data = {
+					name             : $get("name").value,
+					telephone        : $get("telephonenum").value,
+					register_password: $get("register_password").value
+				};
+				if(/^[a-zA-Z0-9_]{3,16}$/ .test(data.name) == false){
+					alert("该昵称已被注册");
+					return false;
+				}
+				if(/^1\d{10}$/.test(data.telephone) == false){
+					alert("您输入的手机号码不正确");	
+					return false;
+				}
+				if(/^.{6}$/.test(data.register_password) == false){
+					alert("请至少输入6位以上的密码");	
+					return false;
+				}
+			}
+			signinzhihu .onclick=function(){
+				var data = {
+					username         : $get("username").value,
+					signin_password  : $get("signin_password").value
+				};
+				if(/^1\d{10}$/.test(data.username) == false||/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/.test(data.username) == false){
+					alert("您输入的用户名不正确");
+					return false;		
+				}
+		}
+	</script>
+</body>
+</html>

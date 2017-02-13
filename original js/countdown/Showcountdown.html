@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8" /> 
+<title>JS实现倒计时(时、分，秒)</title> 
+<style type="text/css">
+	div{
+		color: #fff;
+		background: #333;
+		float: left;
+		margin: 100px;
+		padding: 20px;
+	}
+</style>
+</head> 
+<body> 
+<div id="divdown1"></div> 
+<div id="divdown2"></div> 
+<script language="javascript" type="text/javascript"> 
+var interval = 1000;
+
+function calcTime(time){
+	var now = new Date(); 
+	var endDate = new Date(time);
+	var leftTime = endDate.getTime()-now.getTime(); 
+	var leftsecond = parseInt(leftTime/1000); //lefttime是毫秒，现在把他计算成秒
+	//Math.floor()向下取整，就是求一个最接近它的整数，它的值小于或等于这个浮点数。// 
+	var day=Math.floor(leftsecond/(60*60*24)); 
+	var hour=Math.floor((leftsecond-day*24*60*60)/3600); 
+	var minute=Math.floor((leftsecond-day*24*60*60-hour*3600)/60); 
+	var second=Math.floor(leftsecond-day*24*60*60-hour*3600-minute*60);
+	return [day,hour,minute,second];
+	}
+function ShowCountDown(day1,day2) 
+	{ 
+	var time1 = calcTime(day1);
+	var time2 = calcTime(day2);
+	var tt1 = document.getElementById('divdown1');
+	var tt2 = document.getElementById('divdown2');
+	var person= ["王勇","张蓉"];
+	
+	tt1.innerHTML = "<h3>亲爱的"+person[0]+"：</h3>我们提示您距离张大美女的生日("+day1+")还有——<br/>"+time1[0]+"天"+time1[1]+"小时"+time1[2]+"分"+time1[3]+"秒"+"，<br/>注意提前准备好您的礼物！";
+
+	tt2.innerHTML = "<h3>亲爱的"+person[1]+"：</h3>我们提示您距离王大帅哥的生日("+day2+")还有——<br/>"+time2[0]+"天"+time2[1]+"小时"+time2[2]+"分"+time2[3]+"秒"+"，<br/>注意提前准备好您的礼物！";
+}
+window.setInterval(function(){ShowCountDown('2017-04-01','2017-02-20');}, interval); 
+</script> 
+</body> 
+</html> 

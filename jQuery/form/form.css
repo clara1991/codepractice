@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	font-size: 16px;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+i {
+	font-style: normal;
+}
+form{
+	display: inline-block;
+	width: 450px;
+	margin-top: 100px;
+	vertical-align: top;
+	border: 1px solid #333;
+}
+fieldset{
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #888;
+}
+legend{
+	margin-left: 10px;
+}
+#regForm div{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+textarea{
+	resize : none;
+	width: 280px;
+	height: 100px;
+}
+.focus{
+	border:1px solid #f00;
+	background: #fcc;
+}
+.msg{
+	margin: 10px;
+}
+.msg_caption{
+	height: 35px;
+}
+.msg_caption span{
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	background: #ccc;
+	color: #fff;
+	text-align: center;
+}
+.msg textarea{
+	width: 400px;
+}
+.centent{
+	display: inline-block;
+	width: 100px;
+	margin-right: 50px;
+}
+.centent span{
+	display: block;
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #333;
+	background: #888;
+	color: #fff;
+	font-size: 12px;
+}

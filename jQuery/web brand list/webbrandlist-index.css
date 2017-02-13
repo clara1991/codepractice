@@ -1,0 +1,45 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	font-size: 16px;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+i {
+	font-style: normal;
+}
+.SubCategoryBox {
+	display: block;
+	width:350px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 1px solid black;
+}
+.SubCategoryBox ul li{
+	display: inline-block;
+	width: 100px;
+	height: 24px;
+	line-height: 24px;
+}
+.SubCategoryBox ul li a{
+	color: #FF00FF;
+}
+.SubCategoryBox ul li a.promoted{
+	color: red;
+	font-weight: bold;
+}
+.showmore{
+	display: block;
+	margin: 10px auto;
+}
+.showmore span{
+	display: block;
+	padding:10px;
+}

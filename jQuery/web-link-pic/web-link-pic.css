@@ -1,0 +1,49 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	font-size: 16px;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+i {
+	font-style: normal;
+}
+#test{
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+}
+#test ul{
+	height: 190px;
+}
+#test li{
+	display: inline-block;
+	width: 200px;
+	height: 190px;
+	float: left;
+	border: 2px solid blue;
+	margin:0 10px;
+}
+#test li a{
+	display: block;
+	height: 190px;
+}
+#test li img{
+	float: left;
+	width: 200px;
+	height: 190px;
+}
+p{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 30px;
+}

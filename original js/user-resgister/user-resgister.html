@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charest="utf-8">
+  <title>js用户注册代码实现</title>
+  <link rel="stylesheet" type="text/css" href="user-resgister.css">
+</head>
+<body>
+  <!--用户注册：结构层：html;表现层：css;行为层：javascript;-->
+  <!--
+  html利用ul,li来构造：
+    注意事项：1、每个Input都要有相应的id,这是在js中去调用的。
+              2、<a href="javascript:void(0)"></a>，添加javascript:void(0)是为了阻止链接的跳转。-->
+  <div id="reg">
+    <div class="reg_title">
+      <h1>用户注册</h1>
+    </div>
+    <form>
+     <ul class="reg_con">
+      <li>
+        <label>用户帐号：</label>
+        <input type="text" id="uname"/>
+        <span class="notice ">用户名不能为空</span>
+      </li>
+      <li>
+        <label>电子邮箱：</label>
+        <input type="text" id="email"/>
+        <span class="notice">邮箱不能为空</span>
+      </li>
+      <li>
+        <label>手机号码：</label>
+        <input type="text" id="mobile"/>
+        <span class="notice ">电话号码不能为空</span>
+      </li>
+      <li>
+        <label>安全密码：</label>
+        <input id="pwd" type="password"/>
+        <span class="notice ">密码不能为空</span>
+      </li>
+      <li>
+        <label>确认密码：</label>
+        <input type="password" id="qrpwd"/>
+        <span class="notice ">请再次输入密码</span>
+      </li>
+    </ul>
+  </form>
+  <button id="reg_sub"><a href="javascript:void(0)" id="enter">立即注册</a></button>
+  </div>
+</body>
+<script type="text/javascript" src="user-resgister.js"></script>
+</html>

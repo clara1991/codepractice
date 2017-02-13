@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8" /> 
+<title>原生JS实现生日倒计时(时、分，秒)</title> 
+<style type="text/css">
+	div.notice{
+		color: #fff;
+		background: #333;
+		float: left;
+		margin: 100px;
+		padding: 20px;
+	}
+</style>
+</head> 
+<body> 
+	<div>
+		<p>亲爱的，悄悄告诉我你的出生日期吧！嘘，放心，我会保密的~</p>
+		<form id="select"></form>
+		<p>快来看看你的生日还有几天吧！</p>
+		<button onclick='nextbirthday()'>好的，我超想知道哒</button>
+	</div>
+	<div id="divdown"  class="notice" style="display:none">
+	</div> 
+	<script language="javascript" type="text/javascript"> 
+	var interval = 1000;
+	var now = new Date(),
+		nowmonth= now.getMonth();
+	var birthday;
+	    birthform();
+	function birthform(){
+		var $select = document.getElementById("select");
+		var birth_year = "<select id='birth_year'>",
+			birth_month= "<select id='birth_month'>",
+			birth_date = "<select id='birth_date'>";
+		for (var i = 1980; i < 2016; i++) {
+			birth_year += "<option value="+i+">"+i+"</option>";
+		};
+		for (var i = 1; i <= 12; i++) {
+			birth_month += "<option value="+i+">"+i+"</option>";
+		};
+		for (var i = 1; i <= 31; i++) {
+			birth_date += "<option value="+i+">"+i+"</option>";
+		};
+		birth_year += '</select>';
+		birth_month += '</select>';
+		birth_date += '</select>';
+		$select.innerHTML = birth_year+birth_month+birth_date;
+	}
+
+	function yourbirth(){
+		birthmonth=document.getElementById('birth_month').value;
+		birthdate=document.getElementById('birth_date').value;
+		return [birthmonth,birthdate];
+	}
+
+	function calcTime(){
+		var time= yourbirth();
+		var nextYear;
+		if (time[0]>=nowmonth){
+			nextYear = now.getFullYear();
+		}else nextYear = now.getFullYear()+1;
+	    var nextbirth= nextYear+"-"+time[0]+"-"+time[1];
+	    	birthday = nextbirth;
+		var endDate = new Date(nextbirth);
+		var leftTime = endDate.getTime()-now.getTime();
+		var leftsecond = parseInt(leftTime/1000); //lefttime是毫秒，现在把他计算成秒
+		//Math.floor()向下取整，就是求一个最接近它的整数，它的值小于或等于这个浮点数。// 
+		var day= Math.floor(leftsecond/(60*60*24)); 
+		var hour= Math.floor((leftsecond-day*24*60*60)/3600); 
+		var minute= Math.floor((leftsecond-day*24*60*60-hour*3600)/60); 
+		var second= Math.floor(leftsecond-day*24*60*60-hour*3600-minute*60);
+		return [day,hour,minute,second];
+	}
+
+	function ShowCountDown($el) 
+	{ 
+		var counttime = calcTime();
+		var person= ["Jacoob","Clara"];
+		$el.innerHTML = "<h3>亲爱的"+person[0]+"：</h3>我们提示您，距离"+person[1]+"的生日("+birthday+")只有——<br/>"+counttime[0]+"天"+counttime[1]+"小时"+counttime[2]+"分"+counttime[3]+"秒"+"咯，<br/><br/>记得提前准备好您的礼物哦！";
+	}
+
+	function nextbirthday(){
+		$divdown = document.getElementById("divdown");
+		$divdown.style.display="block";
+		ShowCountDown($divdown);
+		// window.setInterval(function(){ShowCountDown();}, interval);
+	}
+	 
+	</script> 
+</body> 
+</html> 

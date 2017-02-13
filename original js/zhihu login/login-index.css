@@ -1,0 +1,158 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	font-size: 16px;
+	font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+i {
+	font-style: normal;
+}
+.hide{
+	display: none;
+}
+.loginarea {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 65px;
+}
+.logo {
+	display:block;
+	width: 160px;
+	height: 74px;
+	margin: 0 auto;
+	background: url(images/logo.6837e927.png) no-repeat;
+}
+.subtitle {
+	margin: 30px 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+}
+.entry {
+	width: 100%;
+	margin-top: 20px;
+}
+.signin-register {
+	margin-top: 20px;
+	display: block;
+	width: 144px;
+    height: 35px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+.signin-register a {
+	display: inline-block;
+	float: left;
+	width: 72px;
+    height: 35px;
+    color: rgb(85, 85, 85);
+    opacity: 0.7;
+}
+.signin-register a:hover {
+	opacity:1
+}
+.signin-register .active{
+	color: rgb(15, 136, 235);
+	border-bottom: 2px solid rgb(15, 136, 235); 
+}
+/*.signin-register .slider-bar{
+	 position: absolute;
+	 top: 33px;
+	 left: 0;
+	 display: block;
+	 width: 43px;
+	 height: 2px;
+	 color: rgb(15, 136, 235);
+}*/
+.entry form {
+	margin-top: 10px;
+	width: 298px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.entry form input{
+	display: inline-block;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	text-indent: 0.8em;
+	font-size: 14px;
+	color:  #555;
+	text-align: left;
+	opacity: .7;
+}
+.getmore{
+	margin-top: 20px;
+	width: 100%;
+}
+button{
+	display: block;
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 3px;
+	text-align: center;
+}
+.reisterzhihu,.signinzhihu{
+	line-height: 40px;
+	background: #0f88eb;
+	color: #fff;
+	font-size: 18px;
+}
+.error_bg{
+	background: #ccc;
+}
+.downloadzhihu{
+	line-height: 38px;
+	background: none;
+    border: 1px solid #96c2e9; 
+    color: #5fa6e5;
+    font-size: 14px;
+}
+.register-entry .downloadzhihu{
+	margin-top: 55px;
+}
+.signin-entry .downloadzhihu{
+	margin-top: 20px;
+} 
+.getmore p{
+	width: 100%;
+	height: 22px;
+	display: block;
+	margin-top: 21px;
+    font-size: 13px;
+}
+.getmore p a{
+	color: #5ca5e8;
+}
+.getmore p a.mobilesignin{
+	float: left;
+	color: #5ca5e8;
+}
+.getmore p a.cannotsignin{
+	float: right;
+	color: #999;
+	opacity: .7;
+}
+.getmore p a.socialIDsignin{
+	color: #999;
+	opacity: .7;
+}
+.getmore p a:hover .socialIDsignin  {
+	color: #555;
+}

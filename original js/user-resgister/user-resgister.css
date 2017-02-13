@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	font-size: 16px;
+	font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+}
+ul,ol,li {
+	list-style:none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+i {
+	font-style: normal;
+}
+.hide{
+	display: none;
+}
+/*表现层：css*/
+/*reset重置代码开始*/
+/*注意事项：
+ 1、页面开始一般都写上重置代码。
+ 2、针对用户名、输入框、提示图标要写一组本身的样式:
+ 一组def默认的样式
+ 一组point获得焦点的样式
+ 一组error错误样式
+ 一组ok输入正确的样式*/
+/*默认样式*/
+#reg{
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+    width: 644px;
+    border: 1px solid #ccc;
+}
+.reg_title {
+	text-align: center;
+	height: 64px;
+	line-height: 64px;
+	border-bottom: 1px dashed #888;
+}
+.reg_con{
+	display: block;
+	margin-top: 30px;
+}
+.reg_con li{
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.reg_con li input{
+	width: 300px;
+	height: 24px;
+}
+.reg_con li span.notice{
+	display: none;
+	font-size: 12px;
+	color:#333; 
+}
+#reg_sub {
+	display: block;
+	width: 105px;
+	height: 35px;
+	margin: 0 auto;
+	border: none;
+	background: red;
+	font-size: 18px;
+	text-align: center;
+}
+#reg_sub a{
+	color: #fff;
+}
+/*输入错误样式——wrong样式*/
+.reg_con li label.wrong{
+	color: red;
+}
+.reg_con li input.wrong{
+	border: 1px solid red;
+}
+.reg_con li span.wrong{
+	display: inline-block;
+	color: red;
+}
+/*获得焦点样式——focus样式*/
+.reg_con li label.focus{
+	color: blue;
+}
+.reg_con li input.focus{
+	border: 1px solid blue;
+}
+.reg_con li span.focus{
+	display: inline-block;
+}
+/*输入正确的样式——ok样式*/
+.reg_con li label.ok{
+	color: green;
+}
+.reg_con li input.ok{
+	border: 1px solid green;
+}
+.reg_con li span.ok{
+	display:block;
+}
+

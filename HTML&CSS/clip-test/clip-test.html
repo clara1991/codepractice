@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title></title>
+	<style type="text/css">
+		#demo { 
+			border: 1px solid #ccc;
+			height: auto;
+			padding-top: 20px;
+		}   
+ /*		#demo u {
+ 			display: block;
+ 			position: absolute; 
+ 			width: 128px;
+ 			height: 128px;  
+ 			background:red;
+ 			-webkit-transition: all .5s ease-in-out 0s;
+ 		}  */ 
+		#demo p {
+			width: 328px;
+			height: 264px;
+			text-align: center;
+			line-height: 120px;
+			background: red;
+		}   
+ 		#demo p.c1 {
+ 			clip: rect(0,128px,0,64px);
+ 		}   
+ 		#demo p.c2 {
+ 			clip:rect(128px,64px,128px,0px);
+ 		}   
+ 		#demo:hover>.c1 {
+ 			clip:rect(0px,128px,128px,64px);
+ 		}   
+ 		#demo:hover>.c2 {
+ 			clip:rect(0px,64px,128px,0);
+ 		}  
+	</style>
+</head>
+<body>
+	<div id="demo">  
+    	<p class="c1">12232434</p>
+    	<p class="c2">463576987</p>  
+ 	</div>  
+</body>
+</html>

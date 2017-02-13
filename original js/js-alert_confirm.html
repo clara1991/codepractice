@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title>js弹窗alert和confirm</title>
+	<style type="text/css">
+		body{
+			font-size: 16px;
+			font-family: 微软雅黑;
+		}
+		.noticelink{
+			margin: 0 auto;
+			text-align: center;
+		}
+		h2{
+			font-size: 1.5em;
+			font-weight: bold;
+   			margin: 5px auto;
+		}
+		a{
+			color:rgb(0, 0, 238);
+			cursor: auto;
+		}
+		.notice {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin: -115px 0 0 -180px;
+			border: 1px solid #888;
+			border-radius: 3px;
+			background: #fff;
+			text-align: center;
+		}
+		#notice1{
+			width: 360px;
+			height: 230px;			
+		}
+		#notice2{
+			width: 440px;
+			height: 230px;
+		}
+		.notice span{
+			margin: 0 auto;
+			margin-top: 5px;
+			display: block;
+			width: 60px;
+			height: 60px;
+			border-radius: 60px;
+			border: 1px solid #ddd;
+			color: green;
+			text-align: center;
+			line-height: 60px;
+			font-size: 60px;
+		}
+		h3 {
+			line-height: 1em;
+		}
+		p{
+			margin: 5px 0;
+			text-align: center;
+			font-size: 14px;
+		}
+		button {
+			display: inline-block;
+			float: left;
+			padding: 10px 30px;
+			margin:0 20px;
+			margin-top: 20px;
+			border-color: none;
+			box-shadow: none;
+			border-radius: 3px;
+			color: #fff;
+		    font-size: 17px;
+		    font-weight: 500;
+		}
+		#notice1 button{
+			margin-left: 140px;
+		}
+		.gray {
+			background: #c1c1c1;
+		}
+		.blue {
+			background: #8CD4F5;
+		}
+	</style>
+</head>
+<body>
+	<div class="noticelink">
+		<h2><a id="Alert" href="">Alert</a></h2>
+		<h2><a id="Confirm" href="">Confirm</a></h2>	
+	</div>
+	<div id="notice1" class="notice">
+		<span>√</span>
+		<h3>hello world!</h3>
+		<p>welcome to my world :)</p>
+		<button class="blue">OK</button>
+	</div>	
+	<div id="notice2" class="notice">
+		<span>?</span>
+		<h3>Are you sure?</h3>
+		<p>You will not be able to recover this imaginary file!</p>
+		<button class="gray">No, cancel plx!</button>
+		<button class="blue">Yes, delete it!</button>
+	</div>
+	<script type="text/javascript">
+	var oAlert=document.getElementById('Alert'),
+		oConfirm=document.getElementById('Confirm')
+		obutton=document.getElementsByTagName('button'),
+		onotice1=document.getElementById("notice1"),
+		onotice2=document.getElementById("notice2");
+	oAlert.onclick=function () {
+		onotice1.style.display ="block";
+		return false;
+	}
+	obutton[0].onclick=function(){
+		if(onotice1){
+			onotice1.style.display ="none";
+			return false;
+		}
+	}
+	oConfirm.onclick=function () {
+		onotice2.style.display ="block";
+		return false;
+	}
+	obutton[1].onclick=function(){
+		if(onotice2){
+			onotice2.style.display ="none";
+			return false;
+		}
+	}
+	obutton[2].onclick=function(){
+		if(onotice2){
+			onotice2.style.display ="none";
+			return false;
+		}
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Video-display-effect.css">
+</head>
+<body>
+	<div class="v_show">
+		<div class="v_caption">
+			<h2 class="cartoon" title="全智贤作品">全智贤作品</h2>
+			<div class="highlight_tip">
+				<span class="current">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+			</div>
+			<div class="change_btn">
+				<span class="prev">上一页<<</span>
+				<span class="next">下一页>></span>
+			</div>
+			<em><a href="#">更多>></a></em>
+		</div>
+		<div class="v_content">
+			<div class="v_content_list">
+				<ul>
+					<li>
+						<a href="#"><img src="images/1.jpg" alt="蓝色大海的传说"></a>
+						<h4><a href="">蓝色大海的传说</a></h4>
+						<span>播放量：<em>3333,3333</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/2.jpg" alt="来自星星的你"></a>
+						<h4><a href="">来自星星的你</a></h4>
+						<span>播放量：<em>2222,2222</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/3.jpg" alt="雏菊"></a>
+						<h4><a href="">雏菊</a></h4>
+						<span>播放量：<em>1111,1111</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/4.jpg" alt="我的野蛮女友"></a>
+						<h4><a href="">我的野蛮女友</a></h4>
+						<span>播放量：<em>4444,4444</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/5.jpg" alt="我的野蛮女友"></a>
+						<h4><a href="">我的野蛮女友</a></h4>
+						<span>播放量：<em>4444,4444</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/6.jpg" alt="我的野蛮女友"></a>
+						<h4><a href="">我的野蛮女友</a></h4>
+						<span>播放量：<em>4444,4444</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/7.jpg" alt="我的野蛮女友"></a>
+						<h4><a href="">我的野蛮女友</a></h4>
+						<span>播放量：<em>4444,4444</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/8.jpg" alt="我的野蛮女友"></a>
+						<h4><a href="">我的野蛮女友</a></h4>
+						<span>播放量：<em>4444,4444</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/9.jpg" alt="雏菊"></a>
+						<h4><a href="">雏菊</a></h4>
+						<span>播放量：<em>1111,1111</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/10.jpg" alt="雏菊"></a>
+						<h4><a href="">雏菊</a></h4>
+						<span>播放量：<em>1111,1111</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/11.jpg" alt="雏菊"></a>
+						<h4><a href="">雏菊</a></h4>
+						<span>播放量：<em>1111,1111</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/12.jpg" alt="雏菊"></a>
+						<h4><a href="">雏菊</a></h4>
+						<span>播放量：<em>1111,1111</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/13.jpg" alt="来自星星的你"></a>
+						<h4><a href="">来自星星的你</a></h4>
+						<span>播放量：<em>2222,2222</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/14.jpg" alt="来自星星的你"></a>
+						<h4><a href="">来自星星的你</a></h4>
+						<span>播放量：<em>2222,2222</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/15.jpg" alt="来自星星的你"></a>
+						<h4><a href="">来自星星的你</a></h4>
+						<span>播放量：<em>2222,2222</em></span>
+					</li>
+					<li>
+						<a href="#"><img src="images/16.jpg" alt="来自星星的你"></a>
+						<h4><a href="">来自星星的你</a></h4>
+						<span>播放量：<em>2222,2222</em></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var page=1;
+		var i=4;//每版放4张图片
+		$("span.next").click(function(){
+			var $parent=$(this).parents("div.v_show");
+			var $v_show=$parent.find("div.v_content_list");
+			var $v_content=$parent.find("div.v_content");
+			var v_width=$v_content.width();
+			var len=$v_show.find("li").length;
+			var page_count=Math.ceil(len/i);
+			if(!$v_show.is(":animated")){
+				if (page==page_count) {
+					$v_show.animate({left:"0px"},"slow");
+					page=1;
+				}else{
+					$v_show.animate({left:"-="+v_width},"slow");
+					page++;
+				}
+				$parent.find("span").eq((page-1)).addClass("current")
+				       .siblings().removeClass("current");
+			}
+		});
+		$("span.prev").click(function(){
+			var $parent=$(this).parents("div.v_show");
+			var $v_show=$parent.find("div.v_content_list");
+			var $v_content=$parent.find("div.v_content");
+			var v_width=$v_content.width();
+			var len=$v_show.find("li").length;
+			var page_count=Math.ceil(len/i);
+			if(!$v_show.is(":animated")){
+				if (page == 1) {
+					$v_show.animate({left:"-="+v_width*(page_count-1)},"slow");
+					page=page_count;
+				}else{
+					$v_show.animate({left:"+="+v_width},"slow");
+					page--;
+				}
+				$parent.find("span").eq((page-1)).addClass("current")
+				    .siblings().removeClass("current");
+			}
+		});
+	});
+
+	</script>
+</body>
+</html>

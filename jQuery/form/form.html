@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title>form应用</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<form action="#" method="POST" id="regForm">
+		<fieldset>
+			<legend>个人基本信息</legend>
+			<div>
+				<label for="username">名称：</label>
+				<input id="username" type="text">
+			</div>
+			<div>
+				<label for="pass">密码：</label>
+				<input id="password" type="password">
+			</div>
+			<div>
+				<label for="msg">详细信息：</label>
+				<textarea id="msg"></textarea>
+			</div>
+		</fieldset>
+	</form>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(":input").focus(function(){
+			$(this).addClass("focus");
+		}).blur(function(){
+			$(this).removeClass("focus");
+		})
+	})
+	</script>
+	<form>
+		<div class="msg">
+			<div class="msg_caption">
+				<span class="bigger">放大</span>
+				<span class="smaller">缩小</span>
+			</div>
+			<div>
+				<textarea id="comment" row="8" cols="20">多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化 多行文本框高度变化</textarea>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		$(function(){
+			var $comment=$("#comment");
+			$(".bigger").click(function(){
+				if($comment.height()<500){
+					$comment.height($comment.height()+50);
+				}
+			});
+			$(".smaller").click(function(){
+				if($comment.height()>50){
+					$comment.height($comment.height()-50);
+				}
+			});
+		})
+	</script>
+	<form>
+		你爱好的运动是？
+		<input type="checkbox" id="CheckedAll">全选/全不选<br/>
+		<input type="checkbox" name="items" value="足球"/>足球
+		<input type="checkbox" name="items" value="篮球"/>篮球
+		<input type="checkbox" name="items" value="羽毛球"/>羽毛球
+		<input type="checkbox" name="items" value="乒乓球"/>乒乓球<br/>
+		<input type="button" id="send" value="提交">
+	</form>
+	<script type="text/javascript">
+		$(function(){
+			$("#CheckedAll").click(function(){
+				$("[name=items]:checkbox").prop("checked",this.checked);
+			});
+			$("[name=items]:checkbox").click(function(){
+				var flag=true;
+				$("[name=items]:checkbox").each(function(){
+					if (!this.checked) {
+						flag=false;
+					}
+				});
+				$("#CheckedAll").prop("checked",flag);
+			});
+			$("#send").click(function(){
+				var str="你选中的是：\r\n";
+				$("[name=items]:checkbox:checked").each(function(){
+					str +=$(this).val()+"\r\n";
+				});
+				alert(str);
+			})
+		});
+	</script>
+	<div class="centent">
+		<select mutiple id="select1" style="width:100px;height:160px;" size="8">
+			<option value="1">选型1</option>
+			<option value="2">选型2</option>
+			<option value="3">选型3</option>
+			<option value="4">选型4</option>
+			<option value="5">选型5</option>
+			<option value="6">选型6</option>
+			<option value="7">选型7</option>
+			<option value="8">选型8</option>
+		</select>
+		<div>
+			<span id="add">选中添加到右边&gt;&gt;</span>
+			<span id="add_all">全部添加到右边&gt;&gt;</span>
+		</div>
+	</div>
+	<div class="centent">
+		<select mutiple id="select2" style="width:100px;height:160px;" size="8">
+			<option value="9">选型9</option>
+			<option value="10">选型10</option>
+			<option value="11">选型11</option>
+			<option value="12">选型12</option>
+		</select>
+		<div>
+			<span id="remove">&lt;&lt;选中删除到右边</span>
+			<span id="remove_all">&lt;&lt;全部删除到右边</span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#add").click(function(){
+			var $options=$("#select1 option:selected");
+			$options.appendTo("#select2");
+		})
+		$("#add_all").click(function(){
+			var $options=$("#select1 option");
+			$options.appendTo("#select2");
+		})
+		$("#select1").dblclick(function(){
+			var $options=$("option:selected",this);
+			$options.appendTo("#select2");
+		})
+		$("#remove").click(function(){
+			var $options=$("#select2 option:selected");
+			$options.appendTo("#select1");
+		})
+		$("#remove_all").click(function(){
+			var $options=$("#select2 option");
+			$options.appendTo("#select1");
+		})
+		$("#select2").dblclick(function(){
+			var $options=$("option:selected",this);
+			$options.appendTo("#select1");
+		})
+	</script>
+</body>
+</html>

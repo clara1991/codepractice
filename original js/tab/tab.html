@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charest="utf-8">
+	<title>js实现tab</title>
+	<link rel="stylesheet" type="text/css" href="tab.css">
+</head>
+<body>
+	<div id="tab">
+		<ul>
+			<li id="kind1"><a href="">aa</a></li>
+			<li id="kind2"><a href="">bb</a></li>
+		</ul>
+		<div id="kind1_detail" class="kind_detail">
+			<dl >
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+				<dd><a href="">111111111111111111111111</a></dd>
+			</dl>
+		<!-- </div>
+		<div id="kind2_detail" class="kind_detail"> -->
+			<dl class="hide">
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+				<dd><a href="">222222222222222222222222</a></dd>
+			</dl>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var jsli=document.getElementsByTagName("li"),
+			jsdl=document.getElementsByTagName("dl"),
+			current_idx = 0;
+			for(i=0;i<jsli.length;i++) {
+				(function(idx){
+					jsli[i].onmouseover=function(){
+							for (var i = 0; i < jsdl.length; i++) {
+								jsdl[i].className="hide";
+								jsli[i].className="";
+								if(idx==i){
+									jsdl[i].className="";
+									this.className="on";
+									current_idx=i;
+								}
+							};
+						};
+				})(i);
+			}
+	</script>
+</body>
+</html>
